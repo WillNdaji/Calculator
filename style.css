@@ -1,0 +1,126 @@
+body{
+    background-color: #3b4664;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.toggle{
+    
+    background-color: #181f32;
+    height: 20px;
+    width: 50px;
+    border-radius: 10px;
+    position: relative;
+    position: absolute;
+    right: 0;
+  
+ 
+}
+
+#toggle-btn{
+    width: 20px;
+    background-color: #d23e35;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom:0;
+    border-radius: 50%;
+    border: none;
+    transition: transform 0.3s;
+    
+
+}
+
+
+
+.moved {
+    transform: translateX(30px); /* Set initial position when moved */
+}
+
+
+.container{
+    height: 500px;
+    width: 400px;
+    margin-left: 500px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.calc-nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.dashboard{
+    background-color: #181f32;
+    height: 100px;
+    width: 400px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    color: white;
+    
+
+}
+
+#dash-text{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    font-size: xx-large;
+
+}
+
+
+.calc-body{
+    background-color: #181f32;
+    padding: 20px;
+    padding-left: 23px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    gap: 15px;
+    column-gap: 50px;
+
+
+}
+
+.calc-body button{
+    padding: 20px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+}
+#reset-btn{
+    width: 170px;
+    grid-column: span 2;
+    font-size: x-large;
+    background-color: #626b96;
+
+}
+#equals-btn{
+
+    width: 170px;
+    grid-column: span 2;
+    background-color: #d23e35;
+    
+}
+
+button:hover{
+    background-color: #626b96;
+}
+#del-btn{
+    background-color: #626b96;
+}
+
+@media screen and (min-width: 360px) and (max-width: 760px) {
+    .container{
+        position: relative;
+        right: 350px;
+    }
+}
